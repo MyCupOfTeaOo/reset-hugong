@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/*init*/
+html {
+  font-size: 125%;
+  font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  margin: 0; }
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: #5AC0CE;
+  width: 100%;
+  z-index: 10; }
+  header .iconfont, header h1 {
+    color: #FFF;
+    line-height: 50px; }
+  header .iconfont {
+    display: block;
+    width: 30px;
+    padding-left: 10px;
+    font-size: 1rem;
+    float: left;
+    cursor: pointer; }
+  header h1 {
+    margin: 0 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: default; }
+
+main {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  z-index: 1; }
+  main .introduction {
+    background-image: url("bg.png");
+    background-size: 100% 270px;
+    padding: 45px 0 45px 20px; }
+    main .introduction .avatar {
+      width: 100px;
+      height: 100px;
+      background-color: #EFEFEF;
+      float: left;
+      border-radius: 50%;
+      overflow: hidden; }
+      main .introduction .avatar img {
+        width: 70%;
+        margin: 10px 15% 0 15%; }
+    main .introduction span {
+      display: block;
+      margin-left: 120px;
+      color: #FFFFFF; }
+    main .introduction .name {
+      margin-top: 20px; }
+      main .introduction .name p {
+        display: inline;
+        font-size: 0.8rem; }
+    main .introduction .place {
+      font-size: 0.7rem;
+      margin-top: 10px; }
+      main .introduction .place img {
+        height: 0.7rem; }
+  main .pk-title, main .pk, main .los, main .o-hours, main .price, main .self-i {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #E6EAEC; }
+  main .pk-title {
+    padding-left: 15px; }
+    main .pk-title span {
+      border-left: 2px solid #5AC0CE;
+      padding-left: 15px; }
+  main .pk, main .los, main .o-hours, main .price {
+    margin-left: 15px;
+    padding-left: 15px;
+    font-size: 0.9rem; }
+  main .pk img {
+    height: 14px;
+    margin-right: 5px; }
+  main .pk span {
+    margin-right: 10px; }
+  main .pk .v-line {
+    padding-left: 10px;
+    border-left: solid 1px #E6EAEC; }
+  main .los span, main .o-hours span, main .price span, main .self-i span {
+    color: #999;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: solid 1px #E6EAEC; }
+  main .price {
+    color: #E46060; }
+  main .self-i {
+    padding-left: 30px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center; }
+    main .self-i span {
+      float: left;
+      flex-shrink: 0; }
+
+footer {
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+  footer .message, footer .phone {
+    width: 40%;
+    margin: 10px auto;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer; }
+  footer .message {
+    border: 1px solid #5AC0CE;
+    background-color: #FFF;
+    color: #5AC0CE; }
+  footer .phone {
+    border: none;
+    background-color: #5AC0CE;
+    color: #FFF; }
+
+/*清除浮动*/
+.clear:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*# sourceMappingURL=mycss1.css.map */

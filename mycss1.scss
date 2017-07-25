@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/*init*/
+html {
+  font-size: 125%;
+  font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+}
+$height-top: 50px;
+$height-bottom: 60px;
+$color-bg: #5AC0CE;
+header{
+  position: fixed;
+  top: 0;
+  background-color: $color-bg;
+  width: 100%;
+  z-index: 10;
+  $width: 30px;
+  %font{
+    color: #FFF;
+    line-height: $height-top;
+  }
+  .iconfont{
+    display: block;
+    @extend %font;
+    width: $width;
+    padding-left: 10px;
+    font-size: 1rem;
+    float: left;
+    cursor: pointer;
+  }
+  h1{
+    margin: 0 40px;
+    font-size: 1rem;
+    @extend %font;
+    font-weight: 500;
+    text-align: center;
+    cursor: default;
+  }
+}
+main{
+  margin-top: $height-top;
+  margin-bottom: $height-bottom;
+  z-index: 1;
+  .introduction{
+    background-image: url("bg.png");
+    background-size: 100% 270px;
+    padding: 45px 0 45px 20px;
+    .avatar{
+      width: 100px;
+      height: 100px;
+      background-color: #EFEFEF;
+      float: left;
+      border-radius: 50%;
+      overflow: hidden;
+      img{
+        width: 70%;
+        margin: 10px 15% 0 15%;
+      }
+    }
+    span{
+      display: block;
+      margin-left: 120px;
+      color: #FFFFFF;
+    }
+    .name{
+      margin-top: 20px;
+      p{
+        display: inline;
+        font-size: 0.8rem;
+      }
+    }
+    .place{
+      font-size: 0.7rem;
+      margin-top: 10px;
+      img{
+        height: 0.7rem;
+      }
+    }
+  }
+  %padding{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #E6EAEC;
+  }
+  .pk-title{
+    padding-left: 15px;
+    @extend %padding;
+    span{
+      border-left: 2px solid $color-bg;
+      padding-left: 15px;
+    }
+  }
+  %mar-left{
+    margin-left: 15px;
+    padding-left: 15px;
+    font-size: 0.9rem;
+  }
+  .pk{
+    @extend %padding;
+    @extend %mar-left;
+    img{
+      height: 14px;
+      margin-right: 5px;
+    }
+    span{
+      margin-right: 10px;
+    }
+    .v-line{
+      padding-left: 10px;
+      border-left: solid 1px #E6EAEC;
+    }
+  }
+  %span{
+    color: #999;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: solid 1px #E6EAEC;
+  }
+  .los{
+    @extend %padding;
+    @extend %mar-left;
+    span{
+      @extend %span;
+    }
+  }
+  .o-hours{
+    @extend %padding;
+    @extend %mar-left;
+    span{
+      @extend %span;
+    }
+  }
+  .price{
+    @extend %padding;
+    @extend %mar-left;
+    color: #E46060;
+    span{
+      @extend %span;
+    }
+  }
+  .self-i{
+    @extend %padding;
+    padding-left: 30px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    span{
+      @extend  %span;
+      float: left;
+      flex-shrink: 0;
+    }
+    p{
+
+    }
+  }
+}
+footer{
+  height: $height-bottom;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  %btn{
+    width: 40%;
+    margin: 10px auto;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .message{
+    @extend %btn;
+    border: 1px solid $color-bg;
+    background-color: #FFF;
+    color: $color-bg;
+  }
+  .phone{
+    @extend %btn;
+    border: none;
+    background-color: $color-bg;
+    color: #FFF;
+  }
+}
+/*清除浮动*/
+.clear{
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

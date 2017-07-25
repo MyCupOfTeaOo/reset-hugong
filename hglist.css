@@ -1,0 +1,196 @@
+/*init*/
+html {
+  font-size: 125%;
+  font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  margin: 0; }
+
+/*header*/
+header {
+  width: 100%;
+  background-color: #5AC0CE;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10; }
+  header .b1, header .b2 {
+    height: 2rem;
+    width: 4rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none; }
+  header .b1:active, header .b2:active, header .st:active {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5); }
+  header .b1 {
+    background-color: #53A8B4;
+    color: #ffffff;
+    margin-right: -5px; }
+  header .b2 {
+    background-color: #ffffff;
+    color: #5AC0CE; }
+  header .st {
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    width: 21px;
+    height: 22px;
+    border: none;
+    background-repeat: no-repeat;
+    background-image: url("sprite.png");
+    background-position: 0 -49px;
+    background-size: 61px;
+    cursor: pointer;
+    outline: none; }
+
+/*main*/
+main {
+  width: 100%;
+  margin-top: 52px;
+  margin-bottom: 60px;
+  z-index: 1; }
+  main table {
+    width: 100%;
+    border-collapse: collapse; }
+    main table thead {
+      border-bottom: solid 1px #E1E5E7; }
+      main table thead tr {
+        width: 100%;
+        height: 50px; }
+      main table thead th {
+        width: 33.3%; }
+      main table thead select {
+        width: 100%;
+        height: 30px;
+        border: none;
+        border-color: #E8EBEC;
+        color: #A2A2A2;
+        font-weight: 500;
+        outline: none;
+        cursor: pointer; }
+      main table thead .sl1 {
+        border-right-style: solid;
+        border-right-width: 1px;
+        text-indent: 25%; }
+      main table thead .sl2 {
+        border-right-style: solid;
+        border-right-width: 1px;
+        text-indent: 30%; }
+      main table thead .sl3 {
+        text-indent: 20%; }
+    main table .tb {
+      border-bottom-style: solid;
+      border-width: 1px;
+      border-color: #E1E5E7; }
+    main table tbody .tr1 {
+      font-size: 16px;
+      color: #A2A2A2;
+      height: 50px; }
+    main table tbody .date {
+      width: 43px; }
+    main table tbody .date-view {
+      margin-left: 15px;
+      width: 20px;
+      height: 18px;
+      background-image: url("sprite.png");
+      background-position: -72px -19.5px;
+      background-repeat: no-repeat;
+      background-size: 91.5px; }
+    main table tbody .dateline {
+      font-size: 16px;
+      color: #000; }
+    main table tbody .price {
+      color: #ff0000;
+      font-size: 16px;
+      line-height: 16px; }
+      main table tbody .price .font-r {
+        float: right; }
+    main table tbody .into {
+      background-color: white;
+      border: none;
+      color: #5AC0CE;
+      font-size: 1rem;
+      float: right;
+      cursor: pointer; }
+      main table tbody .into:active {
+        outline: none; }
+    main table tbody .tr3 {
+      color: #A2A2A2;
+      font-size: 0.5rem;
+      height: 40px; }
+    main table tbody .place {
+      width: 16px;
+      height: 17.25px;
+      margin-left: 15px;
+      background-image: url("sprite.png");
+      background-repeat: no-repeat;
+      background-position: -72px 0;
+      background-size: 91.5px; }
+
+/*footer*/
+footer {
+  z-index: 10;
+  width: 100%;
+  background-color: #F8FAFB;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around; }
+  footer .ft-middle {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: 58px;
+    height: 58px;
+    background-image: url("sprite.png");
+    background-size: 75.274px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer; }
+  footer .ft-left {
+    padding-top: 5px;
+    margin-left: 20px;
+    cursor: pointer; }
+    footer .ft-left .img {
+      width: 32px;
+      height: 27.6px;
+      background-repeat: no-repeat;
+      background-image: url("sprite.png");
+      background-size: 84.18px;
+      background-position: -30.36px -95.91px; }
+    footer .ft-left .font {
+      margin-top: 10px;
+      color: #5AC0CE;
+      font-size: 0.6rem;
+      text-align: center; }
+  footer .ft-right {
+    padding-top: 5px;
+    margin-right: 20px;
+    cursor: pointer; }
+    footer .ft-right .img {
+      width: 30px;
+      height: 28.29px;
+      background-repeat: no-repeat;
+      background-image: url("sprite.png");
+      background-size: 84.18px;
+      background-position: -30.36px -66.24px; }
+      footer .ft-right .img .font {
+        color: #A2A2A2;
+        font-size: 0.6rem;
+        text-align: center;
+        margin-top: 10px; }
+
+footer .ft-left:active, footer .ft-right:active, footer .ft-middle:active {
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5); }
+
+/*# sourceMappingURL=hglist.css.map */
